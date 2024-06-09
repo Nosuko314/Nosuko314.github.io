@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UFJ-8">
+  <meta name="viewport">
+content="width=device-width,initial-scale=1.0">
+  <title>謎解き</title>
+</head>
+<body>
+  <h1>やあ！</h1>
+  <p>answer</p>
+
+  <from>
+    <label for="question">1+1=?</label>
+    <imput type="text" id="answer" name="answer">
+    <button type="button" onclick="checkAnswer()">答え</button>
+  </from>
+
+  <p id="result"></p>
+
+ <script>
+    function checkAnswer(){
+      var answer =
+document.getElementById("answer").value;
+      var result =
+document.getElementById("result");
+
+      if (answer == "2"){
+          result.textContent = "正解やで!";
+      } else {
+          result.textContent = "帰れ";
+      }
+   }
+  </script>
+</body>
+</html>
